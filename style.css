@@ -1,0 +1,184 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: black;
+    /*font-family: 'POPPINS', serif;*/
+    
+}
+.temizle{
+    clear: both;
+}
+html {
+    scroll-behavior: smooth;
+  }
+ 
+body{
+    background-repeat : no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    
+  
+    
+}
+
+
+
+
+
+header{
+    height:auto;
+    background: rgba(0, 0, 0, 0.3);
+    top: 0;
+    height: 16vh;
+    width: 100vw;
+}  
+
+.ust{
+    width: 85%;
+    height:auto;
+    margin: auto;
+
+
+}
+.logo{
+    float: left;
+    width: 20%;
+    height:15vh;
+    margin: auto;
+
+}
+.logo img{
+   
+    margin: 8px 0;
+    width: 100%;
+}
+
+
+.menu{
+    width: 46%;
+    padding: 0;
+    float: right;
+}
+.menu ul{
+    margin-top: 60px;
+}
+
+.menu ul li{
+   
+    color: rgb(255, 255, 225);
+    display: inline;
+    font-size: 1.1rem;
+    margin: 0 20px;
+}
+.menu ul li a{
+    color: rgb(255, 255, 225);
+}
+
+
+
+
+.orta{
+    font-family: 'Playfair', serif;
+    height: 79vh;
+    width: 100vw;
+    color: rgb(255, 255, 225);
+
+}
+.container{
+    display: grid;
+    grid-template-rows: repeat(3, 25.333vh);
+    grid-template-columns: repeat(2, 50%);
+  
+    
+}
+
+.slogan{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    color:rgb(255, 255, 225); 
+    font-size: 6vmax;
+    max-width: 40vw;
+   
+    
+    text-shadow: 0 0 5px rgb(212, 208, 208),1px 1px 0 black;
+}
+/* SAYFA TARİF */
+.container-2{
+    display: grid;
+    grid-template-rows: repeat(2, 50vh);
+    grid-template-columns: repeat(3, 33.333333vw);
+    
+}
+
+.image-box{         /*konumlandırma için position:absolute; top:50px; right:50px; da kullanabilirdik sanırım fakat tari de yazacağım için grid kullandım(kapsayıcı olarak bodyyi baz aldı)*/
+                    /*position: fixed; top: 10vh; right: 10vw; zemine sabitlemek için o anki tarayıcı çözünürlüğüne göre konumlandırılır*/
+                    /*!!!position:relative; z-index:-1-1-1-1; top:10px; right:10px; güya arkaya atması gerekiyor*/
+    height: 36vh;
+    width: 26vw;    
+    /*margin: auto;/*yatayda item içinde ortaladı*/
+    box-shadow: -1px 1px  8px rgb(83, 83, 83);
+    transform: rotate(6deg);
+    position: fixed; 
+    z-index:-1;
+    top: 14vh; 
+    right: 3vw;
+    
+}
+.image-box img{
+    width: 100%;
+    height: 100%;
+   }
+
+
+
+.cherrycherrylady{
+    position: fixed; 
+    top: 47vh; 
+    right: 19vw;
+
+}
+.cherrycherrylady img{
+    width: 134px;
+    height:auto;
+}
+
+.item-2{
+    grid-row: span 2;
+    /*grid-row: 2/4;     !!!ÇALIŞMADI
+    grid-row: 2 / -1 bir itemı belli bir yerden sona kadar uzatmak istersek -1 yazarız
+    */
+    
+}
+
+
+.tarif{
+    padding: 5%;
+    padding-top: 8%;
+    position: fixed; 
+    width: 30vw;
+    height: 80vh;
+}
+.tarif p{
+    font-size: 0.9rem;
+    margin-bottom: 1vh;
+}
+
+/* SAYFA TARİF */
+
+footer{
+    height: 5vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.6);
+    top: 0;
+    
+}
+footer p{
+    color:rgb(255, 255, 225); 
+    text-align: center;
+    padding-top: 10px;
+    font-size: 0.8rem;
+    
+}
